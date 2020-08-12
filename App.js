@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
+import Header from './header';
+import Converter from './converter';
 
 export default class App extends Component{
   render(){
     return(
       <View style={styles.contanier}>
-        <Text style={styles.Text}>Hello React</Text>
+        <Header/>
+        <Converter/>
       </View>
     )
   }
@@ -13,9 +16,11 @@ export default class App extends Component{
 
 const styles = StyleSheet.create({
   contanier:{
-    
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#F3F3F3'
   },
   Text:{
     color: 'red'
   }
-})
+});
