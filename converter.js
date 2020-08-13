@@ -42,12 +42,19 @@ export default Converter;
 const styles = StyleSheet.create({
     converterWrapper:{
         paddingTop: 30,
-        paddingLeft: 150,
+        // paddingLeft: 150,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     inputStyle:{
-
+        // paddingLeft: 60,
+        width: 200,
+        height: 40
     },
     textStyle:{
+        width: 170,
+        height: 50,
+        // paddingTop: 5,
 
     }
 });
